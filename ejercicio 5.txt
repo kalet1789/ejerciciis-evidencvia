@@ -1,0 +1,25 @@
+ejercicio 5
+
+#include <iostream>
+
+using namespace std;
+
+int calc_age(int age) {
+  return age * 365;
+}
+
+void myFunction() {
+  cout << "pero si estas viejo." << endl;
+}
+
+int main() {
+  int age;
+  cout << "introduzca su edad: ";
+  cin >> age;
+  cout << "tu edad en días es: " << calc_age(age) << endl;
+
+
+  myFunction();
+
+  return 0;
+}

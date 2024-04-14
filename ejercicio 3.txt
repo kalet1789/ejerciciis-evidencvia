@@ -1,0 +1,25 @@
+ejercicio 3
+
+#include <iostream>
+
+using namespace std;
+
+
+void myFunction(int &hours, int &minutes) {
+  hours *= 3600; 
+  minutes *= 60; 
+}
+
+int main() {
+  int hours, minutes;
+  cout << "Ingrese horas: ";
+  cin >> hours;
+  cout << "Ingrese minutos: ";
+  cin >> minutes;
+
+  myFunction(hours, minutes);
+
+  cout << "Segundos: " << hours + minutes << endl;
+
+  return 0;
+}

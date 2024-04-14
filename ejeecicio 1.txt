@@ -1,0 +1,33 @@
+ejeecicio 1
+#include <iostream>
+
+using namespace std;
+
+void myFunction() {
+  cout << "Necesito saber el numero total de patas de los animales" << endl;
+}
+
+int main() {
+  myFunction();
+
+
+  int pollos, vacas, cerdos;
+  cout << "Introduzca el numero de pollos: ";
+  cin >> pollos;
+  cout << "Introduzca el numero de vacas: ";
+  cin >> vacas;
+  cout << "Introduzca el numero de cerdos: ";
+  cin >> cerdos;
+
+  int piernasdepollos  = pollos * 2;
+  int piernasdevacas = vacas * 4;
+  int piernasdecerdo = cerdos * 4;
+
+  // Calculate the total number of legs for all the animals.
+  int totalLegs = piernasdepollos + piernasdevacas + piernasdecerdo;
+
+  // Print the total number of legs.
+  cout << "El numero total de patas es: " << totalLegs << endl;
+
+  return 0;
+}

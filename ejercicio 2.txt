@@ -1,0 +1,36 @@
+ejercicio 2
+
+#include <iostream>
+#include <algorithm> // Incluye la biblioteca <algorithm> para usar transform
+
+using namespace std;
+
+
+void myFunction(string &entrada) {
+
+  transform(entrada.begin(), entrada.end(), entrada.begin(), ::tolower);
+
+ 
+  if (entrada == "true") {
+    entrada = "false";
+  } else if (entrada == "false") {
+    entrada = "true";
+  } else {
+    entrada = "Entrada no válida";
+  }
+}
+
+int main() {
+
+
+
+  cout << "Ingrese true o false: ";
+  cin >> entrada;
+
+   myFunction(entrada);
+
+
+  cout << "Valor invertido: " << entrada << endl;
+
+  return 0;
+}

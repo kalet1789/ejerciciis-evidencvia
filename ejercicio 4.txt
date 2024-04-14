@@ -1,0 +1,25 @@
+ejercicio 4
+
+#include <iostream>
+
+using namespace std;
+
+void myFunction() {
+  cout << "Calcula los puntos de tu equipo favorito        " << endl;
+}
+
+int footballPoints(int wins, int draws, int losses) {
+  return (wins * 3) + (draws * 1) + (losses * 0);
+}
+
+int main() {
+ 
+  myFunction(  );
+
+  int wins, draws, losses;
+  cout << "Ingresa el numro de victorias, empates y derrotas: ";
+  cin >> wins >> draws >> losses;
+  cout << "El puntaje total es: " << footballPoints(wins, draws, losses) << endl;
+
+  return 0;
+}
